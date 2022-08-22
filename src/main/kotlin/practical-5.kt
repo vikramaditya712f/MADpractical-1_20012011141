@@ -1,7 +1,7 @@
 fun main()
 {
     print("Enter month number : ")
-    var x= readLine()!!.toInt()
+    val x= readLine()!!.toInt()
 
     when(x)
     {
@@ -51,6 +51,10 @@ fun main()
 
         12->{
             println("December")
+        }
+
+        else->{
+            print("Enter proper month")
         }
     }
 }

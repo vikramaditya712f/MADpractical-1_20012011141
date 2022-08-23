@@ -1,25 +1,43 @@
 fun main()
 {
-    var x= readLine()!!.toInt()
-    var y= readLine()!!.toInt()
-    val sum=0
-    ops(x,y)
+    sum()
+    sub()
+    mul()
+    div()
 }
 
-fun ops(x:Char,vararg y:Int):Int
+fun sum()
 {
-    when(x)
-    {
-        '+'->{
-            for(num in y)
-            {
-                sum=num+sum
-            }
-            println("Sum:$sum")
-
-        }
-        else->{
-
-        }
-    }
+    val num1 = 111
+    val num2 = 2222
+    val num3 = -222
+    val result = num1 + num2 + num3
+    println("Addition of $num1, $num2 and $num3 is $result")
 }
+
+fun sub()
+{
+    val num1 = 111
+    val num2 = 2222
+    val num3 = -222
+    val result = num1 - num2 - num3
+    println("Subtraction of $num1, $num2 and $num3 is $result")
+}
+
+fun mul()
+{
+    val num1 = 111
+    val num2 = 2222
+    val num3 = -222
+    val result = num1 * num2 * num3
+    println("Multiplication of $num1, $num2 and $num3 is $result")
+}
+
+fun div()
+{
+    val num1 = 2222
+    val num2 = 111
+    val result = num1 / num2
+    println("Division of $num1 from $num2 is $result")
+}
+
